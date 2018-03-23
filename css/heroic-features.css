@@ -22,3 +22,16 @@ body {
 .card p, .card ul {
   text-align: left;
 }
+
+.jumbotron {
+  
+}
+
+.home-hero-bg {
+  background: url('../images/brileyshop.png') center center;
+}
+
+.display-3 {
+  color: white;
+  font-weight: 600
+}
