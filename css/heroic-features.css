@@ -5,14 +5,32 @@
  */
 
 body {
-  padding-top: 54px;
+  padding-top: 56px;
+  font-size: 1rem;
+}
+
+.card a:link {
   font-size: 0.9rem;
 }
 
 @media (min-width: 992px) {
   body {
-    padding-top: 56px;
+    padding-top: 54px;
   }
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
 }
 
 .card {
@@ -24,6 +42,10 @@ body {
   text-align: left;
 }
 
+.card-footer .btn {
+  width: 100%;
+}
+
 .jumbotron {
   position: relative;
   padding-top: 20px;
@@ -33,13 +55,18 @@ body {
 .jumbotron .header-content {
   z-index: 2;
   position: relative;
-  padding: 0px 0px 100px 20px;
+  padding: 0px 0px 120px 20px;
+}
+
+@media(max-width:500px) {
+  .jumbotron .header-content {
+    padding: 0px 0px 10px 20px;
+  }
 }
 
 .home-hero-bg {
   margin-bottom: 0px;
-  opacity: 0.9;
-  background: #000 url("../images/brileyshop.png") no-repeat center center;
+  background: #000 url("../images/brileys_transmission.jpg") no-repeat center center;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -50,13 +77,38 @@ body {
   z-index: 1;
 }
 
+.home-hero-bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:0;
+  height:0;
+  border:300px solid #ffffff00;
+  border-left:550px solid #2c2c2c4d;
+  border-top:190px solid  #3a3a3a4a;
+}
+
 .display-3 {
   color: white;
   font-weight: 600;
   text-shadow: 0px 4px 3px #00000066, 0px 8px 13px #0000001a, 0px 18px 23px #0000001a;
 }
 
+@media(max-width:500px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
+
 .lead {
   color: white;
   font-weight: 600
+}
+
+.contact {
+  padding: 10px;
 }
